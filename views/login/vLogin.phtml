@@ -1,0 +1,69 @@
+
+<div class="row" id="login">
+	<div class="col-sm-4 col-md-offset-4">
+
+		
+		<br/>
+		<div id="login-message"></div>
+		<div id="login-carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+					
+				<!--- Login Form --->
+				<div class="item <?= empty($reset)?'active':''; ?>" data-index="0">
+				
+					<form id="frm-login">
+						<div class="form-group clearfix">
+							<label for="ouser-email" class="control-label label-lg">Email Address</label>
+							<input type="text" class="form-control input-lg" id="ouser-email" name="ouser_email" placeholder="Email Address" value="">
+						</div>
+						<div class="form-group clearfix">
+							<label for="ouser-password" class="control-label label-lg">Password</label>
+							<input type="password" class="form-control input-lg" id="ouser-password" name="ouser_password" placeholder="Password" value="">
+						</div>
+						<div class="form-group clearfix">
+							<button type="submit" class="btn btn-primary btn-lg pull-right">&nbsp;&nbsp; <strong>Login</strong> &nbsp;<i class="icon icon-arrow-circle-o-right icon-lg"></i>&nbsp;&nbsp;</submit>
+							<button id="btn-forgot" class="btn btn-default pull-right btn-lg" type="button"> Forgot Password? </button>
+						</div>
+					</form>
+				</div>	
+				
+				<!-- Forgot Password -->
+				<div class="item " data-index="1">
+					<form id="frm-forgot">
+						<div class="form-group clearfix">
+							<label for="ouser-email" class="control-label label-lg">Email Address</label>
+							<input type="text" class="form-control input-lg" id="ouser-email" name="ouser_email" placeholder="Email Address" value="">
+						</div>
+						<div class="form-group clearfix">
+							<button type="submit" class="btn btn-primary btn-lg pull-right">&nbsp;&nbsp; <strong>Send Password</strong> &nbsp;<i class="icon icon-arrow-circle-o-right icon-lg"></i>&nbsp;&nbsp;</submit>
+							<button id="btn-login" class="btn btn-default pull-right btn-lg" type="button"> Goto Login? </button>
+						</div>
+					</form>
+				</div>		
+				
+				<!-- Reset Password -->
+				<div class="item <?= !empty($reset)?'active':''; ?>" data-index="2">
+				
+					<form id="frm-reset">
+						<div class="form-group clearfix">
+							<label for="ouser-password" class="control-label label-lg">New Password</label>
+							<input type="password" class="form-control input-lg" id="ouser-password" name="ouser_password" placeholder="New Password" value="">
+						</div>
+						<div class="form-group clearfix">
+							<label for="ouser-confirm-password" class="control-label label-lg">Confirm Password</label>
+							<input type="password" class="form-control input-lg" id="ouser-confirm-password" name="ouser_confirm_password" placeholder="Confirm Password" value="">
+						</div>
+						<div class="form-group clearfix">
+							<button type="submit" class="btn btn-primary btn-lg pull-right">&nbsp;&nbsp; <strong>Reset</strong> &nbsp;<i class="icon icon-arrow-circle-o-right icon-lg"></i>&nbsp;&nbsp;</submit>
+							<button id="btn-reset-login" class="btn btn-default pull-right btn-lg" type="button"> Goto Login? </button>
+						</div>
+					</form>
+				</div>	
+				
+			</div>
+		</div>
+		
+		
+		
+	</div>
+<div>
